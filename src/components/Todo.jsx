@@ -1,7 +1,7 @@
-import { Circle, CircleCheckBig } from "lucide-react"
+import { Circle, CircleCheckBig, Trash2 } from "lucide-react"
 import { useState } from "react"
 
-export const Todo = ({content}) => {
+export const Todo = ({content, deleteTodo}) => {
     const [isTodoDone, setIsTodoDone] = useState(false)
 
     
@@ -15,6 +15,9 @@ export const Todo = ({content}) => {
         <div className={`flex items-center text-center font-[Outfit] text-l text-white ${isTodoDone? "line-through" : "" }`}>
             {content}
         </div>
+        <button  onClick={deleteTodo} className="ml-auto">
+          <Trash2 className=" text-gray-500 w-5 opacity-0 hover:opacity-100 transition-opacity" />
+        </button>
     </div>
   )
 }
