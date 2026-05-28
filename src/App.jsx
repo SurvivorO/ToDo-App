@@ -15,7 +15,7 @@ function App() {
     setContent((content)=> [
       ...content,
       {
-        id: crypto.randomUUID,
+        id: crypto.randomUUID(),
         textContent: inputContent,
       },
 
