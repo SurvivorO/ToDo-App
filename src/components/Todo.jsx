@@ -12,7 +12,7 @@ export const Todo = ({content, deleteTodo}) => {
                 {isTodoDone? (<CircleCheckBig/>) : (<Circle/>) }
             </button>
         </div>
-        <div className={`flex items-center text-center font-[Outfit] text-l text-white ${isTodoDone? "line-through" : "" }`}>
+        <div className={`flex items-center text-center font-[Outfit] text-lg text-white ${isTodoDone? "line-through" : "" }`}>
             {content}
         </div>
         <button  onClick={deleteTodo} className="ml-auto">

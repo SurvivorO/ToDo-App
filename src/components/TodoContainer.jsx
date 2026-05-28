@@ -1,4 +1,3 @@
-import { Trash2 } from "lucide-react"
 import { Todo } from "./Todo"
 
 
@@ -9,3 +8,5 @@ export const TodoContainer = ({ todos,deleteTodo }) => {
     </div>
   )
 }
+
+export default TodoContainer

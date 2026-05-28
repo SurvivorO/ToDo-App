@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { Todo }  from './components/Todo'
-import { TodoContainer } from './components/TodoContainer'
+import TodoContainer from './components/TodoContainer'
 import TodoHeader from './components/TodoHeader'
 
 function App() {
